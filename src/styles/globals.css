@@ -1,13 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --primary-color: #b37300;
-
-  --gray-color-1: #5a5a5a;
-  --gray-color-2: #333333;
-}
 
 * {
   box-sizing: border-box;
@@ -15,9 +9,14 @@
   margin: 0;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  background-color: var(--primary-color);
+  @apply overflow-x-hidden bg-gray-2;
+}
+
+main {
+  @apply container mx-auto;
 }
