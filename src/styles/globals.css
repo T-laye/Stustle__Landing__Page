@@ -14,9 +14,38 @@ html {
 }
 
 body {
-  @apply overflow-x-hidden bg-gray-2;
+  @apply overflow-x-hidden  max-w-full bg-black;
 }
 
 main {
   @apply container mx-auto;
+}
+
+h2 {
+  @apply text-center font-medium text-2xl mb-3 text-primary;
+}
+
+section {
+  @apply px-6 py-8;
+}
+
+.bk {
+  display: block;
+
+  /* z-index: -2; */
+  background-color: rgb(179, 116, 0, 0.2);
+  /* position: absolute; */
+  /* top: 10px; */
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  z-index: 1;
+  @apply w-6 h-6 rounded-full;
+}
+
+.icon {
+  /* background-color: rgb(0, 255, 255); */
+  z-index: 20;
+  bottom: 0;
+  @apply h-6 w-6 absolute;
 }

@@ -6,7 +6,7 @@ import Service from './main/Service';
 
 export default function Main() {
   return (
-    <main>
+    <main className="bg-white">
       <Header />
       <Hero />
       <About />
