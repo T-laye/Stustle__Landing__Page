@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import Footer from './Layout/Footer';
-import Header from './Layout/Header';
+
 import Main from './Layout/Main';
 
 export default function Layout({ title }) {
@@ -14,7 +14,6 @@ export default function Layout({ title }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Header />
         <Main />
         <Footer />
       </div>
