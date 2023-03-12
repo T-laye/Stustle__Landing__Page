@@ -18,24 +18,28 @@ body {
 }
 
 main {
-  @apply container mx-auto;
+  @apply container mx-auto overflow-x-hidden;
 }
 
 h2 {
   @apply text-center font-medium text-2xl mb-3 text-primary;
 }
 
+h3 {
+  @apply text-base font-medium mb-0;
+}
+
 section {
   @apply px-6 py-8;
 }
 
+footer {
+  @apply px-6 py-6 bg-black;
+}
+
 .bk {
   display: block;
-
-  /* z-index: -2; */
   background-color: rgb(179, 116, 0, 0.2);
-  /* position: absolute; */
-  /* top: 10px; */
   position: absolute;
   right: 0%;
   top: 0%;
@@ -44,7 +48,6 @@ section {
 }
 
 .icon {
-  /* background-color: rgb(0, 255, 255); */
   z-index: 20;
   bottom: 0;
   @apply h-6 w-6 absolute;

@@ -12,7 +12,6 @@ export default function Main() {
       <About />
       <Service />
       <How />
-      <h1>Get task off your hands</h1>
     </main>
   );
 }
