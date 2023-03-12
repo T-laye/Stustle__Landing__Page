@@ -1,26 +1,34 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable jsx-a11y/alt-text */
 import Image from 'next/image';
-import errand from '../../../../public/icons/errand.png';
+import serviceDetails from '../../serviceDetails';
 
 export default function Service() {
+  const renderService = serviceDetails.map((serv, i) => {
+    return (
+      <div
+        key={i}
+        className="w-36 px-4 py-8 mx-auto  max-h-40 bg-gray-0 flex flex-col justify-center items-start rounded-lg hover:shadow-md"
+      >
+        <div className="relative h-8 w-8 ">
+          <div className="icon">
+            <Image src={serv.icon} />
+          </div>
+          <div className="bk"></div>
+        </div>
+        <h3>{serv.title}</h3>
+        <p className="text-xs">{serv.description}</p>
+      </div>
+    );
+  });
+
   return (
     <section>
       <div>
         <h2>Our Services</h2>
         <div>
-          <div>
-            <div className="w-36 px-4 py-8  max-h-40 bg-gray-0 flex flex-col justify-center items-start rounded-lg hover:shadow-md">
-              <div className="relative h-8 w-8 ">
-                <div className="icon">
-                  <Image src={errand} />
-                </div>
-                <div className="bk"></div>
-              </div>
-              <h3 className="text-base font-medium mb-0">Errand</h3>
-              <p className="text-xs">
-                Stustle is a service company laoajc kac jacnjjkasc kcjn
-              </p>
-            </div>
+          <div className="flex flex-wrap gap-4 justify-center  ">
+            {renderService}
           </div>
         </div>
       </div>
