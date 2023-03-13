@@ -29,7 +29,7 @@ export default function Hero() {
           <div></div>
         </div>
       </section>
-      <section id="hero" className={styles.heroDesktop}>
+      <section id="home" className={styles.heroDesktop}>
         <div className="w-1/2  ">
           <h1 className="text-white text-7xl text-left leading-14  font-bold tracking-wide mb-2">
             Get <span className="text-primary">tasks</span> off your hands

@@ -42,10 +42,10 @@ export default function Header() {
           <ol className="flex bg-black-trans text-white text-2xl items-center gap-8 ">
             <li
               className={`hover:text-primary duration-300 ${
-                asPath === '/#hero' ? 'text-primary' : 'text-white'
+                asPath === '/#home' ? 'text-primary' : 'text-white'
               }`}
             >
-              <Link href="#hero" scroll={false}>
+              <Link href="#home" scroll={false}>
                 Home
               </Link>
             </li>
