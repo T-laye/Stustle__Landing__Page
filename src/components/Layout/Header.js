@@ -69,7 +69,7 @@ export default function Header() {
           openNav ? '' : 'translate-x-full'
         } transition-all duration-500 lg:hidden`}
       >
-        <ol className="w-full h-2/3 bg-black-trans    flex-col gap-10 items-center text-2xl  my-auto  ">
+        <ol className="w-full h-2/3 bg-black-trans flex   flex-col gap-10 items-center text-2xl  my-auto  ">
           <li
             className={`${asPath === '/#hero' ? 'text-primary' : 'text-white'}`}
           >
