@@ -4,6 +4,7 @@ import React from 'react';
 import styles from '../../styles/Home.module.css';
 import logo from '../../../public/logo/stustle.png';
 import mobileNav from '../../../public/icons/menu.svg';
+import mobileNavClose from '../../../public/icons/close-circle.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -28,7 +29,10 @@ export default function Header() {
           <Image width={107} height={22} src={logo} alt="Stustle logo" />
         </div>
         <div onClick={open}>
-          <Image src={mobileNav} alt="Hamburger menu" />
+          <Image
+            src={!openNav ? mobileNav : mobileNavClose}
+            alt="Hamburger menu"
+          />
         </div>
       </div>
       <nav
@@ -64,7 +68,7 @@ export default function Header() {
             </Link>
           </li>
           <li
-          // className={`${asPath === '/#how' ? 'text-primary' : 'text-white'}`}
+            className={`${asPath === '/#how' ? 'text-primary' : 'text-white'}`}
           >
             <Link href="#how" scroll={false}>
               How it works
