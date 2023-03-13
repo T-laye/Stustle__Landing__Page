@@ -8,8 +8,7 @@ export default function About() {
 
         <p className="text-center text-lg lg:text-xl ">
           Stustle is a service company that brings comfort to your doorstep by
-          relieving you of some daily tasks. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Itaque, sapiente?
+          relieving you of some daily tasks.
         </p>
       </div>
     </section>

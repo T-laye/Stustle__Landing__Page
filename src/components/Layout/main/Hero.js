@@ -1,3 +1,5 @@
+// import Link from 'next/link';
+import Link from 'next/link';
 import React from 'react';
 import styles from '../../../styles/Home.module.css';
 
@@ -14,7 +16,13 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex flex-col mt-8">
-          <button className={styles.btnPrimary}>Request a Service</button>
+          <Link
+            href="https://tawk.to/chat/640f16a231ebfa0fe7f2456c/1grdf0rhm "
+            target="_blank"
+          >
+            <button className={styles.btnPrimary}>Request a Service</button>
+          </Link>
+
           <button className={styles.btnSecondary}>Learn More</button>
         </div>
         <div className={styles.scroll}>
@@ -31,7 +39,12 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex items-center mt-8 gap-4">
-          <button className={styles.btnPrimary}>Request a Service</button>
+          <Link
+            href="https://tawk.to/chat/640f16a231ebfa0fe7f2456c/1grdf0rhm "
+            target="_blank"
+          >
+            <button className={styles.btnPrimary}>Request a Service</button>
+          </Link>
           <button className={styles.btnSecondary}>Learn More</button>
         </div>
         <div className={styles.scroll}>

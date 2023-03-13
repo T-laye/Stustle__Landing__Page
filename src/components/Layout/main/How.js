@@ -23,9 +23,10 @@ export default function How() {
             </div>
             <div className="bk"></div>
           </div>
-          <h3>Errand</h3>
+          <h3>Contact us</h3>
           <p className="text-sm">
-            Stustle is a service company laoajc kac jacnjjkasc kcjns a service
+            Reach us by clicking on the Request for a service button or contact
+            any of our mobile line
           </p>
           <div className={box_2_visible && !box_3_visible ? 'line' : ''}></div>
         </div>
@@ -43,9 +44,10 @@ export default function How() {
             </div>
             <div className="bk"></div>
           </div>
-          <h3>Errand</h3>
+          <h3>Description</h3>
           <p className="text-sm">
-            Stustle is a service company laoajc kac jacnjjkasc kcjns a service
+            Give a detailed description of the services you need, stating the
+            time and location
           </p>
           <div className={box_3_visible ? 'line' : ''}></div>
         </div>
@@ -61,9 +63,9 @@ export default function How() {
             </div>
             <div className="bk"></div>
           </div>
-          <h3>Errand</h3>
+          <h3>Service Delivered</h3>
           <p className="text-sm">
-            Stustle is a service company laoajc kac jacnjjkasc kcjns a service
+            Relax and have your request delivered shortly😎
           </p>
         </div>
       </div>
