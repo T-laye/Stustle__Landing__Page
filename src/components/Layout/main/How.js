@@ -11,7 +11,7 @@ export default function How() {
   return (
     <section id="how">
       <h2>How It Works</h2>
-      <div className="flex flex-col items-center  gap-8  ">
+      <div className="flex flex-col items-center  gap-8 mb-12  ">
         <div
           // ref={active}
           className={`min-w-80 min-h-32 px-6 py-7  rounded-lg border ${

@@ -1,12 +1,12 @@
 .header {
-  background-color: #0000001a;
+  background-color: #00000079;
   top: 0;
   z-index: 110;
   /* -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px); */
 
   @apply container w-screen  mx-auto p-6 flex justify-between  backdrop-blur-sm fixed left-0 right-0
-  items-center;
+  items-center lg:p-4;
 }
 
 .navItems {
@@ -22,7 +22,25 @@
     url('../../public/background/bk_moblie.jpeg');
   background-size: cover;
   background-position: center;
-  @apply container mx-auto  min-h-screen flex flex-col items-center justify-center px-6 bg-primary relative;
+  @apply container mx-auto  min-h-screen flex flex-col items-center justify-center px-6 bg-primary relative lg:hidden;
+}
+
+.heroDesktop {
+  background: linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.973),
+      rgba(0, 0, 0, 0.897),
+      rgba(0, 0, 0, 0.767),
+      rgba(0, 0, 0, 0.397)
+    ),
+    url('../../public/background/bk.jpeg');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  @apply container mx-auto min-h-screen 
+    flex-col items-start justify-center px-32 bg-primary relative hidden lg:flex;
 }
 
 .btnPrimary {
@@ -39,7 +57,7 @@
 .btnSecondary {
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: inset 0px 0px 0px 0.8px rgb(255, 255, 255);
-  @apply py-3 px-6 rounded-md mt-4
+  @apply py-3 px-6 rounded-md mt-4 lg:mt-0
   text-white;
   transition: all 0.5s ease;
 }
@@ -68,6 +86,7 @@
   padding: 2px 0;
   position: absolute;
   bottom: 42px;
+  @apply lg:left-1/2;
 }
 
 .scroll > div {

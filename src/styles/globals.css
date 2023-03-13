@@ -29,7 +29,8 @@ ol {
 }
 
 h2 {
-  @apply text-center font-medium text-2xl mb-3 text-primary;
+  @apply text-center font-medium text-2xl mb-3 text-primary
+  lg:text-3xl;
 }
 
 h3 {
@@ -37,11 +38,11 @@ h3 {
 }
 
 section {
-  @apply px-6 py-8;
+  @apply px-6 py-8 mb-6;
 }
 
 footer {
-  @apply px-6 py-6 bg-black;
+  @apply container mx-auto px-6 py-6 bg-black;
 }
 
 .icon {
