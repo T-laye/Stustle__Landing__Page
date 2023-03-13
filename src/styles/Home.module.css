@@ -44,7 +44,7 @@
 }
 
 .btnPrimary {
-  @apply bg-primary py-3 px-6 rounded-md text-white;
+  @apply bg-primary py-3 px-6 rounded-md tracking-wide text-white;
   transition: all 0.5s ease;
 }
 .btnPrimary:hover {
@@ -57,7 +57,7 @@
 .btnSecondary {
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: inset 0px 0px 0px 0.8px rgb(255, 255, 255);
-  @apply py-3 px-6 rounded-md mt-4 lg:mt-0
+  @apply py-3 px-6 rounded-md tracking-wide mt-4 lg:mt-0
   text-white;
   transition: all 0.5s ease;
 }

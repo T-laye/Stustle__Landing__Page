@@ -21,7 +21,7 @@ module.exports = {
       white: '#fff',
     },
     fontFamily: {
-      sans: ['Rubik', 'sans-serif'],
+      sans: ['Roboto', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {},

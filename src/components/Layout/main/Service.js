@@ -8,7 +8,7 @@ export default function Service() {
     return (
       <div
         key={i}
-        className="w-36 px-4 py-8 mx-auto  max-h-40 bg-gray-0 flex flex-col justify-center items-start rounded-lg hover:shadow-md hover:bg-white hover:duration-700 lg:"
+        className="w-36 px-4 py-8 mx-auto  max-h-40 bg-gray-0 flex flex-col justify-center items-start rounded-lg hover:shadow-md hover:bg-white hover:duration-700 xl:scale-150 lg:scale-110 xl:mt-14  "
       >
         <div className="relative h-8 w-8 ">
           <div className="icon">
@@ -27,7 +27,7 @@ export default function Service() {
       <div>
         <h2>Our Services</h2>
         <div>
-          <div className="flex flex-wrap gap-4 justify-center md:grid grid-cols-4 md:gap-6 lg:w-4/6 md:w-6/7 mx-auto  ">
+          <div className="flex flex-wrap gap-4 justify-center md:grid grid-cols-4 md:gap-6 xl:gap-x-48 xl:gap-y-20 xl:mb-14 lg:gap-x-20 lg:gap-y-10 lg:mt-8 lg:w-4/6 sm:gap-x-2 md:w-6/7 mx-auto  ">
             {renderService}
           </div>
         </div>
