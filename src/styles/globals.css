@@ -66,9 +66,9 @@ footer {
   position: absolute;
   bottom: -33px;
   left: 50%;
-  @apply border-primary-dark;
+  @apply border-primary-dark bg-primary-dark;
   -webkit-animation: flow 2s forwards;
-  animation: flow 0.2s forwards;
+  animation: flow 0.3s forwards;
 }
 
 @-webkit-keyframes flow {
