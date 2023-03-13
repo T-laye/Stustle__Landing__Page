@@ -15,9 +15,11 @@ export default function Footer() {
           </Link>
         </div>
         <div className=" w-52">
-          <p className="text-sm text-white mt-3 text-base tracking-wide w-52">
-            Stustle is a service company laoajc kac jacnjjkasc kcjns a service
-          </p>
+          <ul className="text-gray-3 text-xs flex flex-col gap-1 mt-2 ">
+            <li>Terms of service</li>
+            <li>FAQ</li>
+            <li>Support</li>
+          </ul>
         </div>
         <div className="flex gap-2 mt-4 mb-8">
           <div className=" w-6 h-6 rounded-full bg-gray-1"></div>
@@ -25,9 +27,10 @@ export default function Footer() {
           <div className=" w-6 h-6 rounded-full bg-gray-1"></div>
           <div className=" w-6 h-6 rounded-full bg-gray-1"></div>
         </div>
-        <div className="border-t border-t-white pt-5 ">
-          <p className="text-white text-center text-xs tracking-wider">
-            © Stustle 2023{' '}
+
+        <div className="border-t border-t-gray-3 pt-5 ">
+          <p className="text-gray-3 text-center text-xs tracking-wider">
+            © Stustle 2023. All rights reserved.
           </p>
         </div>
       </div>

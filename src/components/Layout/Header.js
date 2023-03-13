@@ -40,23 +40,38 @@ export default function Header() {
         </div>
         <nav className="hidden lg:flex">
           <ol className="flex bg-black-trans text-white text-2xl items-center gap-8 ">
-            <li className="hover:text-primary duration-300">
-              <Link legacyBehavior href="">
-                <a>Home</a>
+            <li
+              className={`hover:text-primary duration-300 ${
+                asPath === '/#hero' ? 'text-primary' : 'text-white'
+              }`}
+            >
+              <Link href="#hero" scroll={false}>
+                Home
               </Link>
             </li>
-            <li className="hover:text-primary duration-300">
-              <Link legacyBehavior href="">
-                <a>About us</a>
+            <li
+              className={`hover:text-primary duration-300 ${
+                asPath === '/#about' ? 'text-primary' : 'text-white'
+              }`}
+            >
+              <Link href="#about" scroll={false}>
+                About us
               </Link>
             </li>
-            <li className="hover:text-primary duration-300">
-              <Link legacyBehavior href="">
-                <a>How it works</a>
+            <li
+              className={`hover:text-primary duration-300 ${
+                asPath === '/#how' ? 'text-primary' : 'text-white'
+              }`}
+            >
+              <Link href="#how" scroll={false}>
+                How it works
               </Link>
             </li>
             <li className="text-base">
-              <Link legacyBehavior href="">
+              <Link
+                href="https://tawk.to/chat/640f16a231ebfa0fe7f2456c/1grdf0rhm "
+                target="_blank"
+              >
                 <button className={styles.btnPrimary}>Request a Service</button>
               </Link>
             </li>

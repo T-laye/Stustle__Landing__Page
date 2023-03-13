@@ -3,34 +3,39 @@ import errand from '../../public/icons/errand.png';
 
 const serviceDetails = [
   {
-    title: 'Errand',
+    title: 'Errands',
     icon: errand,
-    description: 'Stustle is a service company laoajc kac jacnjjkasc kcjn',
+    description:
+      'We are available to run errands for you i.e gas refill, deliveries e.t.c',
   },
   {
-    title: 'Errand',
+    title: 'Food services',
     icon: errand,
-    description: 'Stustle is a service company laoajc kac jacnjjkasc kcjn',
+    description:
+      'Lets get your favourite foods cooked and delivered to your doorstep😋',
   },
   {
-    title: 'Errand',
+    title: 'Market Shopping',
     icon: errand,
-    description: 'Stustle is a service company laoajc kac jacnjjkasc kcjn',
+    description: 'Hey😃 lets take stress off your day by shopping for you ',
   },
   {
-    title: 'Errand',
+    title: 'Domestic chores',
     icon: errand,
-    description: 'Stustle is a service company laoajc kac jacnjjkasc kcjn',
+    description:
+      'We can help you tidy up while you relax or get on with business',
   },
   {
-    title: 'Errand',
+    title: 'Assignments',
     icon: errand,
-    description: 'Stustle is a service company laoajc kac jacnjjkasc kcjn',
+    description:
+      'We have skilled personnels available to help with assignments and projects',
   },
   {
-    title: 'Errand',
+    title: 'Tech services',
     icon: errand,
-    description: 'Stustle is a service company laoajc kac jacnjjkasc kcjn',
+    description:
+      'Lets handle your basic and complex tech tasks.We have skilled persons for this🙂',
   },
 ];
 
