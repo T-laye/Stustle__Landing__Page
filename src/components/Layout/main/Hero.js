@@ -9,7 +9,7 @@ export default function Hero() {
           <h1 className="text-white text-5xl text-center leading-tight font-bold tracking-wide mb-2">
             Get <span className="text-primary">tasks</span> off your hands
           </h1>
-          <p className="text-white px-6  text-center text-lg font-normal tracking-wider">
+          <p className="text-white px-6  text-center text-sm font-normal tracking-wider">
             On your lazy days rely on us ! We run so you can relax
           </p>
         </div>
@@ -26,11 +26,11 @@ export default function Hero() {
           <h1 className="text-white text-7xl text-left leading-14  font-bold tracking-wide mb-2">
             Get <span className="text-primary">tasks</span> off your hands
           </h1>
-          <p className="text-white  text-left text-lg font-normal tracking-wider">
+          <p className="text-white  text-left text-lg font-normal tracking-wider leading-3">
             On your lazy days rely on us ! We run so you can relax
           </p>
         </div>
-        <div className="flex items-center  mt-8 gap-4">
+        <div className="flex items-center mt-8 gap-4">
           <button className={styles.btnPrimary}>Request a Service</button>
           <button className={styles.btnSecondary}>Learn More</button>
         </div>
