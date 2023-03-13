@@ -8,7 +8,7 @@ export default function Service() {
     return (
       <div
         key={i}
-        className="w-36 px-4 py-8 mx-auto  max-h-40 bg-gray-0 flex flex-col justify-center items-start rounded-lg hover:shadow-md"
+        className="w-36 px-4 py-8 mx-auto  max-h-40 bg-gray-0 flex flex-col justify-center items-start rounded-lg hover:shadow-md hover:bg-white"
       >
         <div className="relative h-8 w-8 ">
           <div className="icon">
