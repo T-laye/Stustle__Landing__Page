@@ -7,7 +7,7 @@ export default function Footer() {
     <footer>
       <div>
         <div>
-          <Image height={22} src={logo} />
+          <Image height={22} src={logo} alt="logo" />
         </div>
         <div className=" w-52">
           <p className="text-sm text-white mt-3 text-base tracking-wide w-52">

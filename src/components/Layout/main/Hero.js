@@ -3,7 +3,7 @@ import styles from '../../../styles/Home.module.css';
 
 export default function Hero() {
   return (
-    <section className={styles.hero}>
+    <section id="hero" className={styles.hero}>
       <div></div>
       <div className="  ">
         <h1 className="text-white text-5xl text-center leading-tight  font-bold tracking-wide mb-2">
@@ -14,8 +14,8 @@ export default function Hero() {
         </p>
       </div>
       <div className="flex flex-col mt-8">
-        <button class={styles.btnPrimary}>Request a Service</button>
-        <button class={styles.btnSecondary}>Learn More</button>
+        <button className={styles.btnPrimary}>Request a Service</button>
+        <button className={styles.btnSecondary}>Learn More</button>
       </div>
       <div className={styles.scroll}>
         <div></div>

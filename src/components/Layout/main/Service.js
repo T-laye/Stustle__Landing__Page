@@ -12,7 +12,7 @@ export default function Service() {
       >
         <div className="relative h-8 w-8 ">
           <div className="icon">
-            <Image src={serv.icon} />
+            <Image src={serv.icon} alt="icons" />
           </div>
           <div className="bk"></div>
         </div>
@@ -23,7 +23,7 @@ export default function Service() {
   });
 
   return (
-    <section>
+    <section id="services">
       <div>
         <h2>Our Services</h2>
         <div>

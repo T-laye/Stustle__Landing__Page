@@ -1,10 +1,20 @@
 .header {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #0000001a;
   top: 0;
-  z-index: 11;
+  z-index: 110;
+  /* -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); */
 
-  @apply container  mx-auto p-6 flex justify-between backdrop-blur-sm fixed   left-0 right-0
-    items-center;
+  @apply container w-screen  mx-auto p-6 flex justify-between  backdrop-blur-sm fixed left-0 right-0
+  items-center;
+}
+
+.navItems {
+  z-index: 100;
+  background-color: #00000098;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  @apply fixed h-screen w-full  flex items-center;
 }
 
 .hero {
