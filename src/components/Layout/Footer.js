@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import Image from 'next/image';
+import Link from 'next/link';
 import logo from '../../../public/logo/stustle.png';
 
 export default function Footer() {
@@ -7,7 +8,11 @@ export default function Footer() {
     <footer>
       <div>
         <div>
-          <Image height={22} src={logo} alt="logo" />
+          <Link legacyBehavior href="/">
+            <a>
+              <Image height={22} src={logo} alt="logo" />
+            </a>
+          </Link>
         </div>
         <div className=" w-52">
           <p className="text-sm text-white mt-3 text-base tracking-wide w-52">

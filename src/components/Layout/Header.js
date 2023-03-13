@@ -26,58 +26,82 @@ export default function Header() {
     <header className="">
       <div className={styles.header}>
         <div className={styles.logo}>
-          <Image width={107} height={22} src={logo} alt="Stustle logo" />
+          <Link legacyBehavior href="/">
+            <a>
+              <Image width={107} height={22} src={logo} alt="Stustle logo" />
+            </a>
+          </Link>
         </div>
-        <div onClick={open}>
+        <div onClick={open} className="cursor-pointer lg:hidden">
           <Image
             src={!openNav ? mobileNav : mobileNavClose}
             alt="Hamburger menu"
           />
         </div>
+        <nav>
+          <ol className="flex bg-black-trans text-white text-2xl items-center gap-8">
+            <li className="hover:text-primary duration-300">
+              <Link legacyBehavior href="">
+                <a>Home</a>
+              </Link>
+            </li>
+            <li className="hover:text-primary duration-300">
+              <Link legacyBehavior href="">
+                <a>About us</a>
+              </Link>
+            </li>
+            <li className="hover:text-primary duration-300">
+              <Link legacyBehavior href="">
+                <a>How it works</a>
+              </Link>
+            </li>
+            <li className="text-base">
+              <Link legacyBehavior href="">
+                <button className={styles.btnPrimary}>Request a Service</button>
+              </Link>
+            </li>
+          </ol>
+        </nav>
       </div>
       <nav
         onClick={open}
         className={`${styles.navItems} ${
           openNav ? '' : 'translate-x-full'
-        } transition-all duration-500 `}
+        } transition-all duration-500 lg:hidden`}
       >
-        <ol className="w-full h-2/3 bg-black-trans   flex flex-col gap-10 items-center text-2xl  my-auto">
-          <Link href="#hero" scroll={false}>
-            <li
-              className={`${
-                asPath === '/#hero' ? 'text-primary' : 'text-white'
-              }`}
-            >
+        <ol className="w-full h-2/3 bg-black-trans   flex flex-col gap-10 items-center text-2xl  my-auto ">
+          <li
+            className={`${asPath === '/#hero' ? 'text-primary' : 'text-white'}`}
+          >
+            <Link href="#hero" scroll={false}>
               Home
-            </li>
-          </Link>
-          <Link href="#about" scroll={false}>
-            <li
-              className={`${
-                asPath === '/#about' ? 'text-primary' : 'text-white'
-              }`}
-            >
+            </Link>
+          </li>
+          <li
+            className={`${
+              asPath === '/#about' ? 'text-primary' : 'text-white'
+            }`}
+          >
+            <Link href="#about" scroll={false}>
               About us
-            </li>
-          </Link>
-          <Link href="#services" scroll={false}>
-            <li
-              className={`${
-                asPath === '/#services' ? 'text-primary' : 'text-white'
-              }`}
-            >
+            </Link>
+          </li>
+          <li
+            className={`${
+              asPath === '/#services' ? 'text-primary' : 'text-white'
+            }`}
+          >
+            <Link href="#services" scroll={false}>
               Our Services
-            </li>
-          </Link>
-          <Link href="#how" scroll={false}>
-            <li
-              className={`${
-                asPath === '/#how' ? 'text-primary' : 'text-white'
-              }`}
-            >
+            </Link>
+          </li>
+          <li
+            className={`${asPath === '/#how' ? 'text-primary' : 'text-white'}`}
+          >
+            <Link href="#how" scroll={false}>
               How it works
-            </li>
-          </Link>
+            </Link>
+          </li>
           <li className="text-sm">
             <button className={styles.btnPrimary}>Request a Service</button>
           </li>

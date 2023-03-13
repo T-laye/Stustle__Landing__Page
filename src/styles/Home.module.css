@@ -1,12 +1,12 @@
 .header {
-  background-color: #0000001a;
+  background-color: #00000079;
   top: 0;
   z-index: 110;
   /* -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px); */
 
   @apply container w-screen  mx-auto p-6 flex justify-between  backdrop-blur-sm fixed left-0 right-0
-  items-center;
+  items-center lg:p-4;
 }
 
 .navItems {
