@@ -17,7 +17,7 @@ export default function Hero() {
         </div>
         <div className="flex flex-col mt-8">
           <Link
-            href="https://tawk.to/chat/640f16a231ebfa0fe7f2456c/1grdf0rhm "
+            href="https://tawk.to/chat/64105e254247f20fefe5cfca/1grfuvib9"
             target="_blank"
           >
             <button className={styles.btnPrimary}>Request a Service</button>
@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
         <div className="flex items-center mt-8 gap-4">
           <Link
-            href="https://tawk.to/chat/640f16a231ebfa0fe7f2456c/1grdf0rhm "
+            href="https://tawk.to/chat/64105e254247f20fefe5cfca/1grfuvib9"
             target="_blank"
           >
             <button className={styles.btnPrimary}>Request a Service</button>
