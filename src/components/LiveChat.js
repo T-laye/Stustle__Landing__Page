@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App mt">
       <TawkMessengerReact
-        propertyId="640f16a231ebfa0fe7f2456c"
+        propertyId="64105e254247f20fefe5cfca"
         widgetId="1grdf0rhm"
         useRef={tawkMessengerRef}
       />
