@@ -3,8 +3,16 @@ import Link from 'next/link';
 import logo from '../../public/logo/stustle.png';
 import Footer from '@/components/Layout/Footer';
 import styles from '../styles/Home.module.css';
+import { useRouter } from 'next/router';
 
 export default function FormScreen() {
+  const router = useRouter();
+
+  const showSuccess = (e) => {
+    e.preventDefault();
+    router.push('/success');
+  };
+
   return (
     <>
       <header className="mx-auto container bg-white p-6 md:w-1/2   lg:w-1/3">
@@ -30,7 +38,7 @@ export default function FormScreen() {
           data-netlify="true"
           method="POST"
           className=" items-center mb-20"
-          action="/success"
+          onSubmit={showSuccess}
         >
           <div className="flex flex-col mb-4">
             <label htmlFor="fullName">Full Name</label>
