@@ -29,13 +29,16 @@ export default function Hero() {
           <div></div>
         </div>
       </section>
+
+      {/* Desktop Hero Page */}
+
       <section id="home" className={styles.heroDesktop}>
         <div className="w-1/2  ">
-          <h1 className="text-white text-7xl text-left leading-14  font-bold tracking-wide mb-2">
+          <h1 className="text-white text-7xl text-left leading-12  font-bold tracking-wide mb-4">
             Get <span className="text-primary">tasks</span> off your hands
           </h1>
-          <p className="text-white  text-left text-lg font-normal tracking-wider leading-3">
-            On your lazy days rely on us ! We run so you can relax
+          <p className="text-white  text-left text-lg font-normal tracking-wider leading-6">
+            On your lazy days rely on us. <br /> We run so you can relax
           </p>
         </div>
         <div className="flex items-center mt-8 gap-4">
