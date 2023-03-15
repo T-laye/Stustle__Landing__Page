@@ -15,15 +15,14 @@ export default function Hero() {
             On your lazy days rely on us ! We run so you can relax
           </p>
         </div>
-        <div className="flex flex-col mt-8">
-          <Link
-            href="https://tawk.to/chat/64105e254247f20fefe5cfca/1grfuvib9"
-            target="_blank"
-          >
+        <div className="flex flex-col mt-8 items-center">
+          <Link href="/form" target="_blank">
             <button className={styles.btnPrimary}>Request a Service</button>
           </Link>
 
-          <button className={styles.btnSecondary}>Learn More</button>
+          <Link href="/#about" scroll={false}>
+            <button className={styles.btnSecondary}>Learn More</button>
+          </Link>
         </div>
         <div className={styles.scroll}>
           <div></div>
@@ -42,13 +41,12 @@ export default function Hero() {
           </p>
         </div>
         <div className="flex items-center mt-8 gap-4">
-          <Link
-            href="https://tawk.to/chat/64105e254247f20fefe5cfca/1grfuvib9"
-            target="_blank"
-          >
+          <Link href="/form">
             <button className={styles.btnPrimary}>Request a Service</button>
           </Link>
-          <button className={styles.btnSecondary}>Learn More</button>
+          <Link href="/#about" scroll={false}>
+            <button className={styles.btnSecondary}>Learn More</button>
+          </Link>
         </div>
         <div className={styles.scroll}>
           <div></div>
