@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css';
 export default function FormScreen() {
   return (
     <>
-      <header className="mx-auto container bg-white p-6   lg:w-1/3">
+      <header className="mx-auto container bg-white p-6 md:w-1/2   lg:w-1/3">
         <div>
           <Link legacyBehavior href="/">
             <a>
@@ -16,7 +16,7 @@ export default function FormScreen() {
           </Link>
         </div>
       </header>
-      <div className=" px-6 bg-white container mx-auto py-4   lg:w-1/3 ">
+      <div className=" px-6 bg-white container mx-auto py-4 md:w-1/2  lg:w-1/3 ">
         <div className="w-3/4 mb-10">
           <h2 className="text-4xl text-left text-black mb-4">
             Lorem ipsum dolor sit amet.
