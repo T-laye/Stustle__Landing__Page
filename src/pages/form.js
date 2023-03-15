@@ -30,7 +30,7 @@ export default function FormScreen() {
           data-netlify="true"
           method="POST"
           className=" items-center mb-20"
-          action="/success"
+          action="mailto:stustledev@gmail.com"
         >
           <div className="flex flex-col mb-4">
             <label htmlFor="fullName">Full Name</label>
