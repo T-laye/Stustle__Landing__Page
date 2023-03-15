@@ -3,15 +3,19 @@ import Link from 'next/link';
 import logo from '../../public/logo/stustle.png';
 import Footer from '@/components/Layout/Footer';
 import styles from '../styles/Home.module.css';
-// import { useRouter } from 'next/router';
+import { useForm, ValidationError } from '@formspree/react';
+import { useRouter } from 'next/router';
 
 export default function FormScreen() {
-  // const router = useRouter();
+  const [state, handleSubmit] = useForm(
+    process.env.NEXT_PUBLIC_STUSTLE_REQUESTS
+  );
 
-  // const showSuccess = (e) => {
-  //   e.preventDefault();
-  //   router.push('/success');
-  // };
+  const router = useRouter();
+
+  if (state.succeeded) {
+    router.push('/success');
+  }
 
   return (
     <>
@@ -35,10 +39,9 @@ export default function FormScreen() {
         </div>
         <form
           name="request"
-          data-netlify="true"
           method="POST"
           className=" items-center mb-20"
-          // onSubmit={showSuccess}
+          onSubmit={handleSubmit}
         >
           <div className="flex flex-col mb-4">
             <label htmlFor="fullName">Full Name</label>
@@ -59,6 +62,11 @@ export default function FormScreen() {
               type="email"
               id="email"
               placeholder="Enter your email address"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
             />
           </div>
           <div className="flex flex-col mb-4">
@@ -103,15 +111,22 @@ export default function FormScreen() {
               id="message"
               placeholder="Please kindly describe your request"
             />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
           <div className="col-span-2">
             <button
               type="submit"
+              disabled={state.submitting}
               className={`${styles.btnPrimary} mt-10 w-full`}
             >
               Submit
             </button>
           </div>
+          <ValidationError errors={state.errors} />
         </form>
       </div>
       <Footer />
