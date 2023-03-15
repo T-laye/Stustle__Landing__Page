@@ -3,15 +3,15 @@ import Link from 'next/link';
 import logo from '../../public/logo/stustle.png';
 import Footer from '@/components/Layout/Footer';
 import styles from '../styles/Home.module.css';
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 
 export default function FormScreen() {
-  const router = useRouter();
+  // const router = useRouter();
 
-  const showSuccess = (e) => {
-    e.preventDefault();
-    router.push('/success');
-  };
+  // const showSuccess = (e) => {
+  //   e.preventDefault();
+  //   router.push('/success');
+  // };
 
   return (
     <>
@@ -38,7 +38,7 @@ export default function FormScreen() {
           data-netlify="true"
           method="POST"
           className=" items-center mb-20"
-          onSubmit={showSuccess}
+          // onSubmit={showSuccess}
         >
           <div className="flex flex-col mb-4">
             <label htmlFor="fullName">Full Name</label>
