@@ -10,7 +10,7 @@ export default function SuccessPage() {
         <div>
           <Image height={100} src={success} alt="Success" />
         </div>
-        <h1 className="text-4xl">Request Submitted!!!</h1>
+        <h1 className="text-4xl">Request Submitted!</h1>
         <p className="text-xl">
           Your request is being processed, we would reach you Asap
         </p>

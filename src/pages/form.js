@@ -35,6 +35,8 @@ export default function FormScreen() {
           <div className="flex flex-col mb-4">
             <label htmlFor="fullName">Full Name</label>
             <input
+              autoFocus
+              required
               name="fullName"
               type="text"
               id="fullName"
@@ -44,6 +46,7 @@ export default function FormScreen() {
           <div className="flex flex-col mb-4">
             <label htmlFor="email">Email</label>
             <input
+              required
               name="email"
               type="email"
               id="email"
@@ -54,6 +57,7 @@ export default function FormScreen() {
             <label>Preferred Mode of Contact</label>
             <div className="flex gap-4 items-center ">
               <input
+                required
                 name="contact"
                 type="radio"
                 id="whatsapp"
@@ -73,6 +77,7 @@ export default function FormScreen() {
           <div className="flex flex-col mb-4">
             <label htmlFor="phone">Phone Number</label>
             <input
+              required
               name="phone"
               type="tel"
               id="phone"
@@ -82,6 +87,7 @@ export default function FormScreen() {
           <div className="flex flex-col mb-4">
             <label htmlFor="message">Description</label>
             <textarea
+              required
               rows="4"
               cols="20"
               name="message"
