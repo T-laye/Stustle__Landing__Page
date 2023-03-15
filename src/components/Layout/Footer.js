@@ -14,7 +14,7 @@ export default function Footer() {
             </a>
           </Link>
         </div>
-        <div className=" w-52">
+        <div className="w-52">
           <ul className="text-gray-3 text-xs flex flex-col gap-1 mt-2 ">
             <li>Terms of service</li>
             <li>FAQ</li>

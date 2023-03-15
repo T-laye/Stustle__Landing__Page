@@ -39,7 +39,7 @@ export default function Header() {
           />
         </div>
         <nav className="hidden lg:flex">
-          <ol className="flex bg-black-trans text-white text-2xl items-center gap-8 ">
+          <ol className="flex bg-black-trans text-white text-base items-center gap-8 ">
             <li
               className={`hover:text-primary duration-300 ${
                 asPath === '/#home' ? 'text-primary' : 'text-white'
@@ -67,11 +67,8 @@ export default function Header() {
                 How it works
               </Link>
             </li>
-            <li className="text-base">
-              <Link
-                href="https://tawk.to/chat/64105e254247f20fefe5cfca/1grfuvib9"
-                target="_blank"
-              >
+            <li className="text-sm">
+              <Link href="/form" target="_blank">
                 <button className={styles.btnPrimary}>Request a Service</button>
               </Link>
             </li>
@@ -84,7 +81,7 @@ export default function Header() {
           openNav ? '' : 'translate-x-full'
         } transition-all duration-500 lg:hidden`}
       >
-        <ol className="w-full h-2/3 bg-black-trans flex   flex-col gap-10 items-center text-2xl  my-auto  ">
+        <ol className="w-full h-2/3 bg-black-trans flex   flex-col gap-10 items-center text-xl  my-auto  ">
           <li
             className={`${asPath === '/#hero' ? 'text-primary' : 'text-white'}`}
           >
@@ -118,11 +115,7 @@ export default function Header() {
             </Link>
           </li>
           <li className="text-sm">
-            <Link
-              href="https://tawk.to/chat/64105e254247f20fefe5cfca/1grfuvib9"
-              scroll={false}
-            >
-              How it works
+            <Link href="/form" scroll={false}>
               <button className={styles.btnPrimary}>Request a Service</button>
             </Link>
           </li>

@@ -13,7 +13,7 @@ export default function How() {
       <div className="flex flex-col items-center mt-10 gap-8 mb-12  ">
         <div
           // ref={active}
-          className={`min-w-80 min-h-32 px-6 py-7 duration-700  rounded-lg border ${
+          className={`max-w-lg min-h-32 px-6 py-7 duration-700  rounded-lg border ${
             box_2_visible ? 'border-gray-3' : 'border-primary-dark border-2'
           } relative`}
         >
@@ -32,7 +32,7 @@ export default function How() {
         </div>
         <div
           ref={box_2}
-          className={`min-w-80 min-h-32 px-6 py-7  duration-700  rounded-lg border relative  ${
+          className={`max-w-lg min-h-32 px-6 py-7  duration-700  rounded-lg border relative  ${
             box_2_visible && !box_3_visible
               ? 'border-primary-dark border-2'
               : 'border-gray-3'
@@ -53,7 +53,7 @@ export default function How() {
         </div>
         <div
           ref={box_3}
-          className={`min-w-80 min-h-32 px-6 py-7  duration-700  rounded-lg border relative  ${
+          className={`max-w-lg min-h-32 px-6 py-7  duration-700  rounded-lg border relative  ${
             box_3_visible ? 'border-primary-dark border-2' : 'border-gray-3'
           }`}
         >
@@ -65,7 +65,13 @@ export default function How() {
           </div>
           <h3>Service Delivered</h3>
           <p className="text-sm">
-            Relax and have your request delivered shortly😎
+            Relax and have your request Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iure quia earum adipisci corporis veniam,
+            consequatur enim ratione voluptates. Fuga dolore distinctio, veniam
+            reiciendis voluptas cupiditate nesciunt libero, quisquam sunt nihil
+            esse nemo eos, at itaque animi optio vel aliquam aliquid neque dicta
+            quibusdam delectus necessitatibus vero provident? Cupiditate, nemo
+            deleniti?
           </p>
         </div>
       </div>
