@@ -1,0 +1,38 @@
+# Redirects
+[[redirects]]
+  from = "/form"
+  to = "/success"
+  status = 301
+
+# Headers
+[[headers]]
+  # Set a custom header for all pages
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+  
+  # Set a custom header for a specific page
+  for = "/page-1"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+
+# Asset optimization
+[build]
+  command = "npm run build"
+  publish = "build"
+
+  [build.processing]
+    # Optimize images with the `imagemin` plugin
+    [[build.processing.imageoptim]]
+      # Exclude images in the `assets/no-optimize` directory
+      exclude = "**/assets/no-optimize/**"
+      
+    # Minify CSS with the `postcss` plugin
+    [[build.processing.postcss]]
+      # Exclude CSS in the `assets/no-optimize` directory
+      exclude = "**/assets/no-optimize/**/*.css"
+      plugins = [
+        "postcss-import",
+        "postcss-preset-env",
+        "cssnano"
+      ]
