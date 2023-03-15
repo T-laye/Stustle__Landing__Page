@@ -46,6 +46,31 @@ footer {
   @apply container mx-auto px-6 py-6 bg-black;
 }
 
+label {
+  @apply text-base mb-2;
+}
+
+textarea,
+input[type='text'],
+input[type='tel'],
+input[type='email'] {
+  box-shadow: 0px 0px 0px 0.8px #c6c6c6;
+  @apply border-gray-3 p-4 rounded-md duration-300  w-full  text-lg;
+}
+
+textarea:focus,
+input[type='email']:focus,
+input[type='tel']:focus,
+input[type='text']:focus {
+  box-shadow: 0px 1px 3px 0.2px #c6c6c6;
+  @apply outline-0 border-0  duration-500;
+}
+
+textarea {
+  resize: none;
+  @apply p-4;
+}
+
 .icon {
   z-index: 20;
   bottom: 0;

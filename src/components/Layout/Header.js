@@ -68,10 +68,7 @@ export default function Header() {
               </Link>
             </li>
             <li className="text-sm">
-              <Link
-                href="https://tawk.to/chat/64105e254247f20fefe5cfca/1grfuvib9"
-                target="_blank"
-              >
+              <Link href="/form" target="_blank">
                 <button className={styles.btnPrimary}>Request a Service</button>
               </Link>
             </li>
@@ -118,10 +115,7 @@ export default function Header() {
             </Link>
           </li>
           <li className="text-sm">
-            <Link
-              href="https://tawk.to/chat/64105e254247f20fefe5cfca/1grfuvib9"
-              scroll={false}
-            >
+            <Link href="/form" scroll={false}>
               <button className={styles.btnPrimary}>Request a Service</button>
             </Link>
           </li>

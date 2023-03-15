@@ -15,7 +15,6 @@ export default function Layout({ title }) {
       </Head>
       <div>
         <Main />
-
         <Footer />
       </div>
     </>
