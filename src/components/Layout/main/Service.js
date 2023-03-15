@@ -10,7 +10,7 @@ export default function Service() {
       <Link href="/">
         <div
           key={i}
-          className="w-40  px-4 py-8 mx-auto  h-48 bg-gray-0 flex flex-col justify-start items-start rounded-lg hover:shadow-md hover:bg-white hover:duration-700 xl:scale-150 lg:scale-110 xl:mt-14  "
+          className="w-36  px-4 py-8 mx-auto  h-48 bg-gray-0 flex flex-col justify-start items-start rounded-lg hover:shadow-md hover:bg-white hover:duration-700 xl:scale-150 lg:scale-110 xl:mt-14  "
         >
           <div className="relative h-8 w-8 ">
             <div className="icon">
