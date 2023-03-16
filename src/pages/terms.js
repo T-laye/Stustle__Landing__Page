@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
 import Footer from '@/components/Layout/Footer';
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../public/logo/stustle.png';
@@ -8,6 +9,12 @@ import logo from '../../public/logo/stustle.png';
 export default function Terms() {
   return (
     <>
+      <Head>
+        <title>Terms | Stustle</title>
+        <meta name="description" content="Service Rendering Website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/stusleFavicon.png" />
+      </Head>
       <div className="bg-white min-h-screen px-12 pb-28 pt-6">
         <div>
           <Link href="/">
