@@ -4,6 +4,7 @@ import Hero from './main/Hero';
 import How from './main/How';
 import Service from './main/Service';
 import LiveChat from '../LiveChat';
+import ContactModal from '../ContactModal';
 
 export default function Main() {
   return (
@@ -14,6 +15,7 @@ export default function Main() {
       <Service />
       <How />
       <LiveChat />
+      <ContactModal />
     </main>
   );
 }

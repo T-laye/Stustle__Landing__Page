@@ -47,9 +47,15 @@
   @apply bg-primary py-3 px-6 rounded-md tracking-wide text-white;
   transition: all 0.5s ease;
 }
+
+.btnContactPrimary:hover,
+.btnContactSecondary:hover,
 .btnPrimary:hover {
   transform: scale(1.05);
 }
+
+.btnContactPrimary:active,
+.btnContactSecondary:active,
 .btnPrimary:active {
   transform: translateY(-1px);
 }
@@ -116,4 +122,31 @@
   50% {
     transform: translateY(-20%);
   }
+}
+
+.contactModalContainer {
+  background-color: #0000009a;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+  height: 100vh;
+  @apply fixed w-screen flex items-center justify-center px-4;
+}
+
+.contactModal {
+  background-color: #ffffff;
+  @apply relative  w-72  h-56 shadow-lg rounded-2xl flex items-center  py-6 justify-center;
+}
+
+.btnContactSecondary,
+.btnContactPrimary {
+  @apply bg-primary py-2 w-28 flex justify-center mt-2 sm:mt-4 px-6 rounded-md tracking-wide  text-white;
+  transition: all 0.5s ease;
+}
+
+.btnContactSecondary {
+  background-color: rgb(0, 207, 45);
 }
