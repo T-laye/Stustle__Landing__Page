@@ -6,7 +6,7 @@
   backdrop-filter: blur(10px); */
 
   @apply w-screen  mx-auto p-6 flex justify-between  backdrop-blur-sm fixed left-0 right-0
-  items-center px-4;
+  items-center lg:px-8;
 }
 
 .navItems {

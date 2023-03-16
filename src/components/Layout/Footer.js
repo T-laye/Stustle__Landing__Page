@@ -63,7 +63,7 @@ export default function Footer() {
             <div>
               <Link
                 className="text-gray-3 text-xs hover:text-sm duration-500 hover:text-white hover:font-medium"
-                href="/terms"
+                href="/faq"
                 target="_blank"
               >
                 FAQ
