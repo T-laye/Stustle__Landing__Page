@@ -30,9 +30,7 @@ export default function FormScreen() {
       </header>
       <div className=" px-6 bg-white container mx-auto py-4 md:w-1/2  lg:w-1/3 ">
         <div className="w-3/4 mb-10">
-          <h2 className="text-4xl text-left text-black mb-4">
-            Lorem ipsum dolor sit amet.
-          </h2>
+          <h2 className="text-4xl text-left text-black mb-4">Request Form</h2>
           <p className="text-base leading-5">
             Please fill and submit the form below.
           </p>
@@ -67,6 +65,16 @@ export default function FormScreen() {
               prefix="Email"
               field="email"
               errors={state.errors}
+            />
+          </div>
+          <div className="flex flex-col mb-4">
+            <label htmlFor="email">Location</label>
+            <input
+              required
+              name="location"
+              type="text"
+              id="location"
+              placeholder="Enter your location"
             />
           </div>
           <div className="flex flex-col mb-4">
@@ -121,7 +129,7 @@ export default function FormScreen() {
             <button
               type="submit"
               disabled={state.submitting}
-              className={`${styles.btnPrimary} mt-10 w-full`}
+              className={`${styles.btnPrimary}  mt-10 w-full`}
             >
               Submit
             </button>

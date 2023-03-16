@@ -10,10 +10,10 @@ export default function How() {
   return (
     <section id="how">
       <h2>How It Works</h2>
-      <div className="flex flex-col items-center mt-10 gap-8 mb-12  ">
+      <div className="flex flex-col items-center mt-10 gap-8 mb-12 mx-auto  max-w-lg">
         <div
           // ref={active}
-          className={`max-w-lg min-h-32 px-6 pt-4 pb-7 duration-700  rounded-lg border ${
+          className={`w-full  min-h-32 px-6 pt-4 pb-7 duration-700  rounded-lg border ${
             box_2_visible ? 'border-gray-3' : 'border-primary-dark border-2'
           } relative`}
         >
@@ -31,7 +31,7 @@ export default function How() {
         </div>
         <div
           ref={box_2}
-          className={`max-w-lg min-h-32 px-6 py-7  duration-700  rounded-lg border relative  ${
+          className={`w-full min-h-32 px-6 py-7  duration-700  rounded-lg border relative  ${
             box_2_visible && !box_3_visible
               ? 'border-primary-dark border-2'
               : 'border-gray-3'
@@ -52,7 +52,7 @@ export default function How() {
         </div>
         <div
           ref={box_3}
-          className={`max-w-lg min-h-32 px-6 py-7  duration-700  rounded-lg border relative  ${
+          className={` w-full min-h-32 px-6 py-7  duration-700  rounded-lg border relative  ${
             box_3_visible ? 'border-primary-dark border-2' : 'border-gray-3'
           }`}
         >

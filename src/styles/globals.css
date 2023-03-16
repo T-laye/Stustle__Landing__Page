@@ -47,7 +47,7 @@ footer {
 }
 
 label {
-  @apply text-base mb-2;
+  @apply text-base mb-2 font-medium;
 }
 
 textarea,
