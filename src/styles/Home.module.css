@@ -5,8 +5,8 @@
   /* -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px); */
 
-  @apply container w-screen  mx-auto p-6 flex justify-between  backdrop-blur-sm fixed left-0 right-0
-  items-center lg:p-4;
+  @apply w-screen  mx-auto p-6 flex justify-between  backdrop-blur-sm fixed left-0 right-0
+  items-center lg:py-4 px-16;
 }
 
 .navItems {
@@ -39,7 +39,7 @@
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  @apply container mx-auto min-h-screen 
+  @apply mx-auto min-h-screen 
     flex-col items-start justify-center px-32 bg-primary relative hidden lg:flex;
 }
 

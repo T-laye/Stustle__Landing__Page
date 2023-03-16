@@ -22,7 +22,7 @@ body {
 
 main {
   scroll-behavior: smooth;
-  @apply container mx-auto overflow-x-hidden;
+  @apply mx-auto overflow-x-hidden;
 }
 
 ol {
