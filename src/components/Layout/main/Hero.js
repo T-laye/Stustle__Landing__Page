@@ -19,7 +19,7 @@ export default function Hero() {
             Get <span className="text-primary">tasks</span> off your hands
           </h1>
           <p className="text-white px-6  text-center text-sm font-normal tracking-wider">
-            On your busy days rely on us. And we run all your errand for you.
+            On your busy days rely on us. We run so you can relax.
           </p>
         </div>
         <div className="flex flex-col mt-8 items-center">
@@ -45,7 +45,7 @@ export default function Hero() {
           </h1>
           <p className="text-white  text-left text-lg font-normal tracking-wider leading-6">
             On your busy days rely on us.
-            <br /> And we run all your errand for you.
+            <br /> We run so you can relax.
           </p>
         </div>
         <div className="flex items-center mt-8 gap-4">
