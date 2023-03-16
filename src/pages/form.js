@@ -5,6 +5,7 @@ import Footer from '@/components/Layout/Footer';
 import styles from '../styles/Home.module.css';
 import { useForm, ValidationError } from '@formspree/react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 export default function FormScreen() {
   const [state, handleSubmit] = useForm(
@@ -19,6 +20,12 @@ export default function FormScreen() {
 
   return (
     <>
+      <Head>
+        <title>Form | Stustle</title>
+        <meta name="description" content="Service Rendering Website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/stusleFavicon.png" />
+      </Head>
       <header className="mx-auto container bg-white p-6 md:w-1/2   lg:w-1/3">
         <div>
           <Link legacyBehavior href="/">
