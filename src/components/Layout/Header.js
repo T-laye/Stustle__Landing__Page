@@ -30,7 +30,7 @@ export default function Header() {
   };
 
   return (
-    <header className="px-12">
+    <header>
       <div className={styles.header}>
         <div className={styles.logo}>
           <Link legacyBehavior href="/">

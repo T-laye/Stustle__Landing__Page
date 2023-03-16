@@ -31,7 +31,9 @@ export default function Service() {
     <section id="services">
       <div className="flex flex-col items-center">
         <h2>Our Services</h2>
-        <p className="text-center text-lg">The services we offer:</p>
+        <p className="text-center text-lg">
+          These are some of the services we render:
+        </p>
         <div>
           <div className="flex flex-wrap gap-6 justify-center mt-6 md:grid grid-cols-3 md:gap-6 xl:gap-x-48 xl:gap-y-20 xl:mb-14 lg:gap-x-20 lg:gap-y-10 lg:mt-8 lg:w-5/6 sm:gap-x-2 md:w-6/7 mx-auto">
             {renderService}

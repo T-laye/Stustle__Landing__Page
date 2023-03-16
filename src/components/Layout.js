@@ -11,7 +11,7 @@ export default function Layout({ title }) {
         <title>{title ? title + ' | Stustle' : ' Stustle'}</title>
         <meta name="description" content="Service Rendering Website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/stusleFavicon.png" />
       </Head>
       <div>
         <Main />
