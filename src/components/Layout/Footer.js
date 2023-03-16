@@ -2,6 +2,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../../public/logo/stustle.png';
+import { BsFacebook } from 'react-icons/bs';
+import { IoLogoWhatsapp } from 'react-icons/io';
+import { FaTwitter, FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -22,10 +25,36 @@ export default function Footer() {
           </ul>
         </div>
         <div className="flex gap-2 mt-4 mb-8">
-          <div className=" w-6 h-6 rounded-full bg-gray-1"></div>
-          <div className=" w-6 h-6 rounded-full bg-gray-1"></div>
-          <div className=" w-6 h-6 rounded-full bg-gray-1"></div>
-          <div className=" w-6 h-6 rounded-full bg-gray-1"></div>
+          <Link
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=100090583722573"
+          >
+            <div className=" flex w-7 h-7 justify-center items-center text-gray-3 hover:text-white hover:scale-110 duration-500  rounded-full">
+              {' '}
+              <BsFacebook size={24} />{' '}
+            </div>
+          </Link>
+          <Link target="_blank" href="https://wa.me/message/JVOKBIKMBAITH1">
+            <div className=" w-7 h-7 flex justify-center items-center text-gray-3 hover:text-white hover:scale-110 duration-500 rounded-full">
+              {' '}
+              <IoLogoWhatsapp size={24} />{' '}
+            </div>
+          </Link>
+          <Link target="_blank" href="/">
+            <div className=" w-7 h-7 flex justify-center items-center text-gray-3 hover:text-white hover:scale-110 duration-500 rounded-full">
+              {' '}
+              <FaTwitter size={24} />{' '}
+            </div>
+          </Link>
+          <Link
+            href="https://www.linkedin.com/company/stustle/"
+            target="_blank"
+          >
+            <div className=" w-7 h-7 flex justify-center items-center text-gray-3 hover:text-white hover:scale-110 duration-500    rounded-full ">
+              {' '}
+              <FaLinkedin size={24} />{' '}
+            </div>
+          </Link>
         </div>
 
         <div className="border-t border-t-gray-3 pt-5 ">

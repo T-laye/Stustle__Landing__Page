@@ -71,20 +71,16 @@ textarea {
   @apply p-4;
 }
 
-.icon {
+/* .icon {
   z-index: 20;
   bottom: 0;
   @apply h-6 w-6 absolute;
-}
+} */
 
 .bk {
   display: block;
   background-color: rgb(179, 116, 0, 0.2);
-  position: absolute;
-  right: 0%;
-  top: 0%;
-  z-index: 1;
-  @apply w-6 h-6 rounded-full;
+  @apply w-10 h-10 rounded-full flex justify-center  items-center;
 }
 
 .line {

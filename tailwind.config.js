@@ -19,6 +19,11 @@ module.exports = {
       'gray-2': '#333333',
       'gray-3': '#C6C6C6',
       white: '#fff',
+      'fb-blue': '#4267B2',
+      'whatsApp-green': '	#25D366',
+      'twitter-blue': '		#1DA1F2',
+      'linkedIn-blue': '		#0077b5 ',
+      'gmail-red': '		#DB4437 ',
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],

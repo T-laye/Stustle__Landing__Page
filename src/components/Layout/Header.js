@@ -9,8 +9,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import ContactModal from '../ContactModal';
 
 export default function Header() {
+  const [openModal, setOpenModal] = useState(false);
+
+  const open_modal = () => {
+    setOpenModal(!openModal);
+  };
+
   // open and close nav
   const { asPath } = useRouter();
   // console.log(asPath);
@@ -68,7 +75,7 @@ export default function Header() {
               </Link>
             </li>
             <li className="text-sm">
-              <Link href="/form" target="_blank">
+              <Link href={asPath} onClick={open_modal}>
                 <button className={styles.btnPrimary}>Request a Service</button>
               </Link>
             </li>
@@ -115,12 +122,13 @@ export default function Header() {
             </Link>
           </li>
           <li className="text-sm">
-            <Link href="/form" scroll={false}>
+            <Link href={asPath} onClick={open_modal}>
               <button className={styles.btnPrimary}>Request a Service</button>
             </Link>
           </li>
         </ol>
       </nav>
+      <ContactModal modal={openModal} />
     </header>
   );
 }
