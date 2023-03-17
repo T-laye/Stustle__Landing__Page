@@ -14,7 +14,7 @@ export default function Service() {
   const renderService = serviceDetails.map((serv, i) => {
     return (
       <Link href="/#service" key={i} onClick={open}>
-        <div className="w-36  px-4 pt-4 pb-8   h-48 bg-gray-0 flex flex-col justify-start items-start rounded-lg hover:shadow-md hover:bg-white hover:duration-700 xl:scale-150 lg:scale-110 xl:mt-14 max-[380px]:mt-4 max-[380px]:w-48 max-[380px]:h-60  ">
+        <div className="w-36  px-4 pt-4 pb-8   h-48 bg-gray-0 flex flex-col justify-start items-start rounded-lg hover:shadow-md hover:bg-white hover:duration-700 xl:scale-150 lg:scale-110 xl:mt-14 max-[380px]:mb-4 max-[380px]:w-48 max-[380px]:h-60  ">
           <div className=" w-full flex justify-start  ">
             <div className="bk text-black">{serv.icon}</div>
           </div>

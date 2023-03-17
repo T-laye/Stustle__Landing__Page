@@ -1,11 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../public/logo/stustle.png';
-import Footer from '@/components/Layout/Footer';
 import styles from '../styles/Home.module.css';
 import { useForm, ValidationError } from '@formspree/react';
 import { useRouter } from 'next/router';
-import Head from 'next/head';
 
 export default function FormScreen() {
   const [state, handleSubmit] = useForm(
@@ -20,18 +18,15 @@ export default function FormScreen() {
 
   return (
     <>
-      <Head>
-        <title>Form | Stustle</title>
-        <meta name="description" content="Service Rendering Website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/stusleFavicon.png" />
-      </Head>
       <header className="mx-auto container bg-white p-6 md:w-1/2   lg:w-1/3">
-        <div>
+        <div className="flex underline align-bottom underline-offset-2 justify-between">
           <Link legacyBehavior href="/">
             <a>
               <Image height={22} width={107} src={logo} alt="Stustle Logo" />
             </a>
+          </Link>
+          <Link legacyBehavior href="/">
+            <a>return to home</a>
           </Link>
         </div>
       </header>
@@ -49,24 +44,23 @@ export default function FormScreen() {
           onSubmit={handleSubmit}
         >
           <div className="flex flex-col mb-4">
-            <label htmlFor="fullName">Full Name</label>
+            <label htmlFor="fullName">Name</label>
             <input
               autoFocus
               required
               name="fullName"
               type="text"
               id="fullName"
-              placeholder="Enter your full name"
+              placeholder="Enter your name"
             />
           </div>
           <div className="flex flex-col mb-4">
             <label htmlFor="email">Email</label>
             <input
-              required
               name="email"
               type="email"
               id="email"
-              placeholder="Enter your email address"
+              placeholder="Enter your email address (optional)"
             />
             <ValidationError
               prefix="Email"
@@ -85,34 +79,19 @@ export default function FormScreen() {
             />
           </div>
           <div className="flex flex-col mb-4">
-            <label>Preferred Mode of Contact</label>
-            <div className="flex gap-4 items-center ">
-              <input
-                required
-                name="contact"
-                type="radio"
-                id="whatsapp"
-                value="Whatsapp"
-              />
-              <label className="m-0" htmlFor="whatsapp">
-                Whatsapp
-              </label>
-            </div>
-            <div className="flex gap-4 items-center ">
-              <input name="contact" type="radio" id="call" value="Call" />
-              <label className="m-0" htmlFor="call">
-                Call
-              </label>
-            </div>
-          </div>
-          <div className="flex flex-col mb-4">
             <label htmlFor="phone">Phone Number</label>
             <input
               required
               name="phone"
+              pattern="[0-9]{11}"
               type="tel"
               id="phone"
               placeholder="Enter your phone number"
+            />
+            <ValidationError
+              prefix="Phone Number"
+              field="phone"
+              errors={state.errors}
             />
           </div>
           <div className="flex flex-col mb-4">
@@ -144,7 +123,6 @@ export default function FormScreen() {
           <ValidationError errors={state.errors} />
         </form>
       </div>
-      <Footer />
     </>
   );
 }
