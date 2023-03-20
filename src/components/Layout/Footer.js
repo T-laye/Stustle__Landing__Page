@@ -4,7 +4,8 @@ import Link from 'next/link';
 import logo from '../../../public/logo/stustle.png';
 import { BsFacebook } from 'react-icons/bs';
 import { IoLogoWhatsapp } from 'react-icons/io';
-import { FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
+import { RiInstagramFill } from 'react-icons/ri';
 
 export default function Footer() {
   return (
@@ -34,10 +35,13 @@ export default function Footer() {
                 <IoLogoWhatsapp size={20} />{' '}
               </div>
             </Link>
-            <Link target="_blank" href="/">
+            <Link
+              target="_blank"
+              href="https://instagram.com/stustle.ng?igshid=ZDdkNTZiNTM="
+            >
               <div className=" w-7 h-7 flex justify-center items-center text-gray-3 hover:text-white hover:scale-110 duration-500 rounded-full">
                 {' '}
-                <FaTwitter size={20} />{' '}
+                <RiInstagramFill size={22} />{' '}
               </div>
             </Link>
             <Link
