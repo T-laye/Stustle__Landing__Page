@@ -15,14 +15,26 @@ export default function Hero() {
     <>
       <section id="hero" className={styles.hero}>
         <div className="  ">
-          <h1 className="text-white text-5xl text-center leading-tight font-bold tracking-wide mb-2">
+          <h1
+            data-aos="zoom-out"
+            data-aos-delay="700"
+            className="text-white text-5xl text-center leading-tight font-bold tracking-wide mb-2"
+          >
             Get <span className="text-primary">tasks</span> off your hands
           </h1>
-          <p className="text-white px-6  text-center text-sm font-normal tracking-wider">
+          <p
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            className="text-white px-6  text-center text-sm font-normal tracking-wider"
+          >
             On your busy days rely on us. We run so you can relax.
           </p>
         </div>
-        <div className="flex flex-col mt-8 items-center">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="800"
+          className="flex flex-col mt-8 items-center"
+        >
           <Link href="" onClick={open_modal}>
             <button className={styles.btnPrimary}>Request a Service</button>
           </Link>
@@ -40,15 +52,27 @@ export default function Hero() {
 
       <section id="home" className={styles.heroDesktop}>
         <div className="w-1/2  ">
-          <h1 className="text-white text-7xl text-left leading-12  font-bold tracking-wide mb-4">
+          <h1
+            data-aos="fade-right"
+            data-aos-delay="700"
+            className="text-white text-7xl text-left leading-12  font-bold tracking-wide mb-4"
+          >
             Get <span className="text-primary">tasks</span> off your hands
           </h1>
-          <p className="text-white  text-left text-lg font-normal tracking-wider leading-6">
+          <p
+            data-aos="fade-up"
+            data-aos-delay="500"
+            className="text-white  text-left text-lg font-normal tracking-wider leading-6"
+          >
             On your busy days rely on us.
             <br /> We run so you can relax.
           </p>
         </div>
-        <div className="flex items-center mt-8 gap-4">
+        <div
+          data-aos="flip-up"
+          data-aos-delay="700"
+          className="flex items-center mt-8 gap-4"
+        >
           <Link href="" onClick={open_modal}>
             <button className={styles.btnPrimary}>Request a Service</button>
           </Link>

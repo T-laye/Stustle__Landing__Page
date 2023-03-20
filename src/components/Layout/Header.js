@@ -32,20 +32,24 @@ export default function Header() {
   return (
     <header>
       <div className={styles.header}>
-        <div className={styles.logo}>
+        <div data-aos="flip-up" className={styles.logo}>
           <Link legacyBehavior href="/">
             <a>
               <Image width={107} height={22} src={logo} alt="Stustle logo" />
             </a>
           </Link>
         </div>
-        <div onClick={open} className="cursor-pointer lg:hidden">
+        <div
+          data-aos="flip-up"
+          onClick={open}
+          className="cursor-pointer lg:hidden"
+        >
           <Image
             src={!openNav ? mobileNav : mobileNavClose}
             alt="Hamburger menu"
           />
         </div>
-        <nav className="hidden lg:flex">
+        <nav data-aos="flip-up" className="hidden lg:flex">
           <ol className="flex bg-black-trans text-white text-base items-center gap-8 ">
             <li
               className={`hover:text-primary duration-300 ${
