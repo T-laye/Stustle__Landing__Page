@@ -9,7 +9,7 @@ export default function How() {
 
   return (
     <section id="how">
-      <h2>How It Works</h2>
+      <h2 data-aos="flip-up">How It Works</h2>
       <div className="flex flex-col items-center mt-10 gap-8 mb-12 mx-auto  max-w-lg">
         <div
           // ref={active}
