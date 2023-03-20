@@ -46,7 +46,7 @@ export default function Service() {
           <div
             data-aos="fade-up"
             data-aos-delay="200"
-            className="max-[380px]:flex-col  flex flex-wrap gap-6 justify-center mt-6 md:grid grid-cols-3 md:gap-6 xl:gap-x-48 xl:gap-y-20 xl:mb-14 lg:gap-x-20 lg:gap-y-10 lg:mt-8 lg:w-5/6 sm:gap-x-2 md:w-6/7 mx-auto"
+            className="max-[380px]:flex-col  flex flex-wrap gap-6 justify-center mt-6 sm:grid grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-48 xl:gap-y-20 xl:mb-14 lg:gap-x-20 lg:gap-y-10 lg:mt-8 lg:w-5/6 sm:gap-x-2 md:w-6/7 mx-auto"
           >
             {renderService}
           </div>
