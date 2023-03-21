@@ -3,7 +3,7 @@ import About from './main/About';
 import Hero from './main/Hero';
 import How from './main/How';
 import Service from './main/Service';
-import LiveChat from '../LiveChat';
+// import LiveChat from '../LiveChat';
 import ContactModal from '../ContactModal';
 import Spinner from '../Spinner';
 // import { useRouter } from 'next/router';
@@ -17,7 +17,7 @@ export default function Main() {
       <About />
       <Service />
       <How />
-      <LiveChat />
+      {/* <LiveChat /> */}
       <ContactModal />
       <Spinner />
     </main>
