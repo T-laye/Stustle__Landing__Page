@@ -37,7 +37,7 @@ export default function Footer() {
             </Link>
             <Link
               target="_blank"
-              href="https://instagram.com/stustle.ng?igshid=ZDdkNTZiNTM="
+              href="https://instagram.com/stustle_official?igshid=ZDdkNTZiNTM="
             >
               <div className=" w-7 h-7 flex justify-center items-center text-gray-3 hover:text-white hover:scale-110 duration-500 rounded-full">
                 {' '}

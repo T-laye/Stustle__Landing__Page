@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-  @apply text-base font-medium mb-0;
+  @apply text-lg font-medium mb-0;
 }
 
 section {
