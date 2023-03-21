@@ -5,6 +5,7 @@ import { MdOutlineCleaningServices } from 'react-icons/md';
 import { SiBookstack } from 'react-icons/si';
 import { DiReact } from 'react-icons/di';
 import { GiComb } from 'react-icons/gi';
+import { BiTask } from 'react-icons/bi';
 
 const serviceDetails = [
   {
@@ -40,13 +41,18 @@ const serviceDetails = [
     title: 'Tech',
     icon: <DiReact size={24} />,
     description:
-      'Lets handle your tech tasks such as CAD designs, web dev etc .We have skilled persons for this. ',
+      'Tasks such as CAD designs, web dev (tutoring or collaborations) etc. ',
   },
   {
     title: 'Saloon Services',
     icon: <GiComb size={24} />,
     description:
       'Need saloon services at home, get a nice hair cut, make your wigs or get your hair fixed.',
+  },
+  {
+    title: 'Other Services',
+    icon: <BiTask size={24} />,
+    description: 'Any other basic non-skilled task you will need help with.',
   },
 ];
 
