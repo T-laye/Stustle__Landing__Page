@@ -44,8 +44,8 @@ export default function Service() {
         </p>
         <div>
           <div
-            // data-aos="fade-up"
-            // data-aos-delay="200"
+            data-aos="fade-up"
+            data-aos-delay="200"
             // className="max-[380px]:flex-col  flex  gap-6 justify-center mt-6 sm:grid sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-48 xl:gap-y-20 xl:mb-14 lg:gap-x-20 lg:gap-y-10 lg:mt-8 lg:w-5/6 sm:gap-x-2 md:w-6/7 mx-auto"
             className="mt-6 flex gap-12 flex-wrap justify-evenly bg-primay w-full "
           >
