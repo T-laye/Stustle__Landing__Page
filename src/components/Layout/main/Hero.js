@@ -43,9 +43,9 @@ export default function Hero() {
             <button className={styles.btnSecondary}>Learn More</button>
           </Link>
         </div>
-        <div className={styles.scroll}>
+        {/* <div className={styles.scroll}>
           <div></div>
-        </div>
+        </div> */}
       </section>
 
       {/* Desktop Hero Page */}
@@ -80,9 +80,9 @@ export default function Hero() {
             <button className={styles.btnSecondary}>Learn More</button>
           </Link>
         </div>
-        <div className={styles.scroll}>
+        {/* <div className={styles.scroll}>
           <div></div>
-        </div>
+        </div> */}
       </section>
       <ContactModal modal={openModal} />
     </>
